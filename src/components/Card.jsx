@@ -8,7 +8,6 @@ const Card = () => {
     const data = await res.json();
     setProducts(data);
   };
-
   getProducts();
   return (
     <div>

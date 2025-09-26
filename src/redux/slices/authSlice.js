@@ -30,7 +30,7 @@ const initialState = {
     token: null,
     status: 'idle', // idle | loading | succeeded | failed
     error: null,
-    isAuthenticated: true
+    isAuthenticated: false
 };
 
 const authSlice = createSlice({

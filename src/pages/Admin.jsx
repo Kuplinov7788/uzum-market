@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [activePage, setActivePage] = useState("dashboard");
@@ -44,7 +45,10 @@ const Admin = () => {
       <div className="drawer-content flex flex-col items-center justify-start p-4">
         {activePage === "dashboard" && (
           <h1 className="text-2xl font-bold">📊 Dashboard</h1>
+
         )}
+        <Link to={'/home'}>asosiy page ga otish</Link>
+
 
         {activePage === "add-product" && (
           <div className="w-full max-w-md bg-white p-4 rounded shadow">

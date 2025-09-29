@@ -1,5 +1,6 @@
 import React from "react";
 import { Search, Heart, ShoppingCart, User } from "lucide-react";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="container mx-auto w-[70%] max-w-[100%]">
@@ -63,12 +64,12 @@ const Header = () => {
             >
               <Heart size={20} /> Saralangan
             </a>
-            <a
-              href="#"
+            <Link
+            to={'/basket'}
               className="flex items-center gap-1 hover:text-purple-600"
             >
               <ShoppingCart size={20} /> Savat
-            </a>
+            </Link>
           </div>
         </div>
 

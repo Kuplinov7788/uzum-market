@@ -12,6 +12,7 @@ import Login from "./pages/Login.jsx";
 import RequireAuth from "./hooks/PrivateRout.jsx";
 import { Provider } from "react-redux";
 import { store } from "./redux/store.js";
+import Basket from "./pages/Basket.jsx";
 
 // ⚡️ Правильная структура
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         path: "/admin", // /admin
         element: <Admin />,
       },
+      {
+        path: "/basket",
+        element: <Basket />
+      }
     ],
   },
 ]);

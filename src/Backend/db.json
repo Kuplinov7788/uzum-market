@@ -46,7 +46,13 @@
       "price": "214",
       "total": "124",
       "thumbnail": "1234242"
+    },
+    {
+      "id": "94b8",
+      "title": "fedya",
+      "price": "10",
+      "total": "jonka",
+      "thumbnail": "999999"
     }
   ]
-
 }

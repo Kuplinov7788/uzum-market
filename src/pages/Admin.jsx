@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Admin = () => {
   const [activePage, setActivePage] = useState("dashboard");
@@ -6,11 +7,13 @@ const Admin = () => {
   const [price, setPrice] = useState("");
   const [total, setTotal] = useState("");
   const [thumbnail, setThumbnail] = useState("");
+  const store = useSelector((state) => state);
+  console.log(store);
 
   const postProduct = async (e) => {
     e.preventDefault(); // forma refresh bo‘lmasligi uchun
     try {
-      const response = await fetch("http://localhost:3001/products", {
+      const response = await fetch("http://localhost:3002/products", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
